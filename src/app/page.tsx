@@ -1,35 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  SiGmail,
-  SiGooglecalendar,
-  SiSlack,
-  SiImessage,
-  SiWhatsapp,
-  SiNotion,
-  SiGoogledrive,
-  SiZoom,
-  SiHubspot,
-  SiSalesforce,
-  SiGithub,
-  SiGooglesheets,
-} from "react-icons/si";
-import { FaMicrosoft } from "react-icons/fa6";
 
 const integrations = [
-  { name: "Gmail", icon: SiGmail },
-  { name: "Google Calendar", icon: SiGooglecalendar },
-  { name: "Outlook", icon: FaMicrosoft },
-  { name: "Slack", icon: SiSlack },
-  { name: "iMessage", icon: SiImessage },
-  { name: "WhatsApp", icon: SiWhatsapp },
-  { name: "Notion", icon: SiNotion },
-  { name: "Google Drive", icon: SiGoogledrive },
-  { name: "Zoom", icon: SiZoom },
-  { name: "HubSpot", icon: SiHubspot },
-  { name: "Salesforce", icon: SiSalesforce },
-  { name: "GitHub", icon: SiGithub },
-  { name: "Google Sheets", icon: SiGooglesheets },
+  "WhatsApp",
+  "Telegram",
+  "Discord",
+  "Slack",
+  "Signal",
+  "iMessage",
+  "Claude",
+  "GPT",
+  "Spotify",
+  "Hue",
+  "Obsidian",
+  "Twitter",
+  "Browser",
+  "Gmail",
+  "GitHub",
 ];
 
 const builtFor = [
@@ -236,21 +223,35 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-white/10 bg-[#0b0d12] py-10">
+      <section className="border-b border-white/10 bg-[#0b0d12] py-12">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="mb-4 text-center text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">
-            Connects to +10,000 tools
-          </div>
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-            {integrations.map(({ name, icon: Icon }) => (
+          <p className="mb-2 text-cyan-300">⟩</p>
+          <h2 className="text-3xl font-bold md:text-5xl">Works With Everything</h2>
+          <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+            {integrations.map((name) => (
               <div
                 key={name}
-                className="flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[0.03] px-3 py-2 text-sm text-slate-200"
+                className="rounded-xl border border-white/10 bg-white/[0.03] px-3 py-2 text-center text-sm text-slate-200"
               >
-                <Icon className="h-4 w-4 text-cyan-300" />
-                <span>{name}</span>
+                {name}
               </div>
             ))}
+          </div>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link
+              href="/integrations"
+              className="rounded-xl bg-cyan-300 px-5 py-2.5 text-sm font-semibold text-slate-900 transition hover:bg-cyan-200"
+            >
+              View All Integrations
+            </Link>
+            <a
+              href="https://openclaw.ai/integrations"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl border border-cyan-300/40 px-5 py-2.5 text-sm font-semibold text-cyan-200 transition hover:bg-cyan-300/10"
+            >
+              Reference: openclaw.ai/integrations
+            </a>
           </div>
         </div>
       </section>
