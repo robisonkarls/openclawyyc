@@ -278,30 +278,32 @@ export default function Home() {
 
       <section id="how-it-works" className="bg-white py-16">
         <div className="mx-auto max-w-6xl px-6">
-          <h2 className="text-3xl font-bold md:text-4xl">How It Works</h2>
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
-            {[
-              [
-                "1. Kickoff",
-                "We map your goals, integrations, security boundaries, and first workflows.",
-              ],
-              [
-                "2. Deploy & Harden",
-                "We install, secure, and connect your assistant stack with best-practice controls.",
-              ],
-              [
-                "3. Hypercare",
-                "We optimize prompts, guardrails, and reliability until your team is fully confident.",
-              ],
-            ].map(([title, body]) => (
-              <article
-                key={title}
-                className="rounded-xl border border-slate-200 bg-slate-50 p-6"
-              >
-                <h3 className="text-xl font-semibold text-indigo-700">{title}</h3>
-                <p className="mt-3 text-slate-700">{body}</p>
-              </article>
-            ))}
+          <h2 className="text-3xl font-bold md:text-4xl">How it works</h2>
+
+          <div className="mt-10 space-y-8">
+            <article className="rounded-2xl border border-slate-200 bg-slate-50 p-8">
+              <p className="text-3xl font-bold text-indigo-700">1</p>
+              <h3 className="mt-4 text-2xl font-bold text-slate-900">Kickoff call</h3>
+              <p className="mt-4 text-lg text-slate-700">
+                We discuss your goals, map your integrations (email, calendar, CRM, messaging), and plan your agent&apos;s workflows. You tell us what to automate — we handle the rest.
+              </p>
+            </article>
+
+            <article className="rounded-2xl border border-slate-200 bg-slate-50 p-8">
+              <p className="text-3xl font-bold text-indigo-700">2</p>
+              <h3 className="mt-4 text-2xl font-bold text-slate-900">Deploy & harden</h3>
+              <p className="mt-4 text-lg text-slate-700">
+                We set up your VPS or Mac Mini, install OpenClaw, configure Composio for secure OAuth, connect your tools, set up Docker sandboxing, firewall rules, and cron jobs. You go live same day.
+              </p>
+            </article>
+
+            <article className="rounded-2xl border border-slate-200 bg-slate-50 p-8">
+              <p className="text-3xl font-bold text-indigo-700">3</p>
+              <h3 className="mt-4 text-2xl font-bold text-slate-900">14-day hypercare</h3>
+              <p className="mt-4 text-lg text-slate-700">
+                We tune workflows, expand permissions as you build trust, fix edge cases, and make sure everything runs smoothly. Dedicated Slack channel for direct support.
+              </p>
+            </article>
           </div>
         </div>
       </section>
