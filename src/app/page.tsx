@@ -139,25 +139,63 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-y border-blue-100 bg-white py-6">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-center gap-3 px-6 text-center md:flex-row md:gap-6">
-          <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">
-            Powered by OpenClaw Ecosystem
-          </p>
-          <a
-            href="https://openclaw.ai"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center rounded-lg border border-slate-200 bg-slate-50 px-4 py-2 hover:bg-slate-100"
-          >
-            <Image
-              src="/openclaw-logo-text.png"
-              alt="OpenClaw"
-              width={170}
-              height={32}
-              className="h-6 w-auto"
-            />
-          </a>
+      <section className="border-y border-blue-100 bg-white py-8">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="flex flex-col items-center gap-4 text-center">
+            <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">
+              Powered by OpenClaw Ecosystem
+            </p>
+            <a
+              href="https://openclaw.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded-lg border border-slate-200 bg-slate-50 px-4 py-2 hover:bg-slate-100"
+            >
+              <Image
+                src="/openclaw-logo-text.png"
+                alt="OpenClaw"
+                width={170}
+                height={32}
+                className="h-6 w-auto"
+              />
+            </a>
+          </div>
+
+          <div className="mt-8 rounded-2xl border border-slate-200 bg-slate-50 p-6 md:p-8">
+            <div className="flex flex-col items-center justify-between gap-6 md:flex-row md:items-start">
+              <div className="text-center md:text-left">
+                <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">
+                  Connects to
+                </p>
+                <p className="mt-2 text-3xl font-bold text-indigo-700">+10,000</p>
+              </div>
+
+              <div className="grid w-full max-w-4xl grid-cols-2 gap-3 text-sm font-medium text-slate-700 sm:grid-cols-3 md:grid-cols-4">
+                {[
+                  "Gmail",
+                  "Google Calendar",
+                  "Outlook",
+                  "Slack",
+                  "iMessage",
+                  "WhatsApp",
+                  "Notion",
+                  "Google Drive",
+                  "Zoom",
+                  "HubSpot",
+                  "Salesforce",
+                  "GitHub",
+                  "Google Sheets",
+                ].map((tool) => (
+                  <div
+                    key={tool}
+                    className="rounded-lg border border-blue-100 bg-white px-3 py-2 text-center"
+                  >
+                    {tool}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
