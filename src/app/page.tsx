@@ -106,27 +106,51 @@ const afterPurchase = [
 const faqs = [
   {
     q: "What is OpenClaw?",
-    a: "An open-source always-on AI assistant platform that can triage comms, orchestrate workflows, and act across connected tools.",
+    a: "OpenClaw is an open-source always-on AI assistant platform that can triage communication, schedule actions, and run workflows across connected tools.",
   },
   {
-    q: "Do we need technical expertise?",
-    a: "No. We run the deployment, hardening, integrations, and tuning. Your team interacts through familiar chat channels.",
+    q: "Do I need to be technical?",
+    a: "No. We handle setup, security hardening, integrations, testing, and optimization. Your team uses the assistant through familiar chat channels.",
   },
   {
-    q: "Can we set this up ourselves?",
-    a: "Yes — but most self-installs miss important security and operational controls. We make it production-ready from day one.",
+    q: "Can I set this up myself?",
+    a: "Yes, but most DIY installs miss key controls around permissions, revocation, and operational safety. We make it production-ready from day one.",
   },
   {
-    q: "What’s included in implementation?",
-    a: "Infrastructure setup, OpenClaw install, security baseline, integration wiring, core workflows, documentation, and hypercare.",
+    q: "What is included in implementation?",
+    a: "Infrastructure provisioning, OpenClaw deployment, security baseline, integration wiring, up to three core workflows, documentation, and 14-day hypercare.",
+  },
+  {
+    q: "What happens after I pay?",
+    a: "We contact you within 48 hours, run kickoff, then complete a live setup session (typically 1–3 hours) so you can go live quickly.",
+  },
+  {
+    q: "Is OpenClaw safe to run with business data?",
+    a: "It can be, if deployed correctly. We start with least privilege, apply sandboxing and hardening, and only expand permissions as trust grows.",
+  },
+  {
+    q: "What if the bot goes rogue?",
+    a: "We implement safeguards: read-first permissions, strict execution boundaries, revocation controls, and staged trust policies to reduce risk.",
+  },
+  {
+    q: "Do you support multi-agent deployments?",
+    a: "Yes. Most teams run 2–6 role-specific assistants (e.g., CEO, Sales, Finance, EA) with clear identity boundaries.",
   },
   {
     q: "What about ongoing maintenance?",
-    a: "We offer managed care for updates, integration health, regression checks, and ongoing support.",
+    a: "Managed care covers updates, integration health, token lifecycle issues, workflow drift, and support escalation.",
   },
   {
     q: "VPS or Mac Mini?",
-    a: "Most teams use VPS for cost and manageability. Mac Mini is useful for teams needing Apple-specific local workflows.",
+    a: "Most teams choose VPS for cost and maintainability. Mac Mini is useful when local hardware or Apple-specific workflows are required.",
+  },
+  {
+    q: "How much does setup usually cost?",
+    a: "Cost depends on complexity, integrations, and workflow count. We scope this in kickoff and provide a clear implementation plan before build.",
+  },
+  {
+    q: "Do you work only in Calgary?",
+    a: "We are Calgary-first and remote-capable. We can support teams across the region and beyond, with local context for Calgary workflows.",
   },
 ];
 
@@ -381,19 +405,37 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="rounded-2xl border border-slate-200 bg-slate-50 p-8">
           <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">Learn More</p>
+          <p className="mt-3 max-w-3xl text-slate-600">
+            Deep-dive resources for leadership teams evaluating implementation approach, cost, and operating model.
+          </p>
           <div className="mt-6 space-y-4">
             {[
-              "What is OpenClaw?",
-              "OpenClaw vs. hiring an executive assistant",
-              "How much does OpenClaw setup cost?",
-              "What is a Collison Install?",
+              {
+                title: "What is OpenClaw?",
+                blurb: "Always-on assistant architecture, capabilities, and practical business use cases.",
+              },
+              {
+                title: "OpenClaw vs. hiring an executive assistant",
+                blurb: "Where automation wins, where human support still matters, and how teams combine both.",
+              },
+              {
+                title: "How much does OpenClaw setup cost?",
+                blurb: "Key cost drivers: integrations, workflow scope, security controls, and support model.",
+              },
+              {
+                title: "What is a Collison Install?",
+                blurb: "Done-for-you implementation model: we show up and deploy everything for you.",
+              },
             ].map((item) => (
               <a
-                key={item}
+                key={item.title}
                 href="#"
                 className="group flex items-center justify-between rounded-lg border border-slate-200 bg-white px-5 py-4 text-slate-800 hover:border-indigo-300"
               >
-                <span className="font-medium">{item}</span>
+                <div>
+                  <p className="font-medium">{item.title}</p>
+                  <p className="mt-1 text-sm text-slate-500">{item.blurb}</p>
+                </div>
                 <span className="text-indigo-700 transition-transform group-hover:translate-x-1">→</span>
               </a>
             ))}
