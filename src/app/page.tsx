@@ -180,22 +180,16 @@ const cities = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
-      <section className="border-b border-amber-200 bg-amber-50 py-3">
-        <div className="mx-auto max-w-6xl px-6 text-center text-sm font-semibold text-amber-800">
-          INTERNAL DRAFT — benchmark layout/content scope complete (ready for brand rewrite pass).
-        </div>
-      </section>
-
       <section className="bg-gradient-to-r from-blue-700 to-indigo-800 text-white">
         <div className="mx-auto max-w-6xl px-6 py-24 md:py-28">
           <p className="mb-4 inline-block rounded-full bg-white/20 px-4 py-1 text-sm font-semibold">
             White-Glove OpenClaw Deployment • Calgary Region
           </p>
           <h1 className="max-w-5xl text-4xl font-bold leading-tight md:text-6xl">
-            We Deploy and Maintain Your Team’s AI Assistants — Securely, End-to-End
+            AI Assistant Services for Calgary Teams — Deployed, Secured, and Managed
           </h1>
           <p className="mt-6 max-w-4xl text-lg text-blue-100 md:text-xl">
-            We install, harden, integrate, and maintain your assistant stack so founders and executive teams can move faster without adding security risk.
+            We design and operate always-on OpenClaw assistants for founders and executive teams, with security-first setup, real integrations, and ongoing support.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a href="#contact" className="rounded-lg bg-white px-6 py-3 font-semibold text-blue-700">Book a Call</a>
@@ -358,7 +352,7 @@ export default function Home() {
         <div className="rounded-2xl border border-green-200 bg-green-50 p-8">
           <h2 className="text-3xl font-bold text-green-900">100% satisfaction guarantee</h2>
           <p className="mt-3 text-green-800">
-            If you’re not happy with the setup, we’ll make it right. Internal draft keeps this guarantee block for parity with the sample flow.
+            If you’re not happy with the setup, we’ll make it right. We stand behind implementation quality and long-term support.
           </p>
         </div>
       </section>
@@ -413,23 +407,27 @@ export default function Home() {
               {
                 title: "What is OpenClaw?",
                 blurb: "Always-on assistant architecture, capabilities, and practical business use cases.",
+                href: "/learn-more/what-is-openclaw",
               },
               {
                 title: "OpenClaw vs. hiring an executive assistant",
                 blurb: "Where automation wins, where human support still matters, and how teams combine both.",
+                href: "/learn-more/openclaw-vs-executive-assistant",
               },
               {
                 title: "How much does OpenClaw setup cost?",
                 blurb: "Key cost drivers: integrations, workflow scope, security controls, and support model.",
+                href: "/learn-more/openclaw-setup-cost",
               },
               {
                 title: "What is a Collison Install?",
                 blurb: "Done-for-you implementation model: we show up and deploy everything for you.",
+                href: "/learn-more/collison-install",
               },
             ].map((item) => (
               <a
                 key={item.title}
-                href="#"
+                href={item.href}
                 className="group flex items-center justify-between rounded-lg border border-slate-200 bg-white px-5 py-4 text-slate-800 hover:border-indigo-300"
               >
                 <div>
