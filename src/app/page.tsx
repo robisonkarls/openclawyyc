@@ -1,4 +1,19 @@
 import Image from "next/image";
+import {
+  SiGmail,
+  SiGooglecalendar,
+  SiMicrosoftoutlook,
+  SiSlack,
+  SiImessage,
+  SiWhatsapp,
+  SiNotion,
+  SiGoogledrive,
+  SiZoom,
+  SiHubspot,
+  SiSalesforce,
+  SiGithub,
+  SiGooglesheets,
+} from "react-icons/si";
 
 const builtForProfiles = [
   {
@@ -172,25 +187,26 @@ export default function Home() {
 
               <div className="grid w-full max-w-4xl grid-cols-2 gap-3 text-sm font-medium text-slate-700 sm:grid-cols-3 md:grid-cols-4">
                 {[
-                  "Gmail",
-                  "Google Calendar",
-                  "Outlook",
-                  "Slack",
-                  "iMessage",
-                  "WhatsApp",
-                  "Notion",
-                  "Google Drive",
-                  "Zoom",
-                  "HubSpot",
-                  "Salesforce",
-                  "GitHub",
-                  "Google Sheets",
-                ].map((tool) => (
+                  { name: "Gmail", icon: SiGmail },
+                  { name: "Google Calendar", icon: SiGooglecalendar },
+                  { name: "Outlook", icon: SiMicrosoftoutlook },
+                  { name: "Slack", icon: SiSlack },
+                  { name: "iMessage", icon: SiImessage },
+                  { name: "WhatsApp", icon: SiWhatsapp },
+                  { name: "Notion", icon: SiNotion },
+                  { name: "Google Drive", icon: SiGoogledrive },
+                  { name: "Zoom", icon: SiZoom },
+                  { name: "HubSpot", icon: SiHubspot },
+                  { name: "Salesforce", icon: SiSalesforce },
+                  { name: "GitHub", icon: SiGithub },
+                  { name: "Google Sheets", icon: SiGooglesheets },
+                ].map(({ name, icon: IconComponent }) => (
                   <div
-                    key={tool}
-                    className="rounded-lg border border-blue-100 bg-white px-3 py-2 text-center"
+                    key={name}
+                    className="flex items-center justify-center gap-2 rounded-lg border border-blue-100 bg-white px-3 py-2 text-center"
                   >
-                    {tool}
+                    <IconComponent className="h-4 w-4 text-indigo-700" aria-hidden="true" />
+                    <span>{name}</span>
                   </div>
                 ))}
               </div>
