@@ -179,6 +179,10 @@ export default function Home() {
       <section className="bg-white py-16">
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="text-3xl font-bold md:text-4xl">Always On, Always Working</h2>
+          <p className="mt-4 max-w-4xl text-lg text-slate-600">
+            Unlike chat-only tools, your OpenClaw assistant runs 24/7 on dedicated infrastructure. It wakes up every 30 minutes, checks your email, calendar, and connected tools, then takes action proactively — without waiting for you to prompt it.
+          </p>
+
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {timeline.map((item) => (
               <div
@@ -192,6 +196,10 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+          <p className="mt-8 max-w-4xl text-slate-600">
+            You talk to your assistant through Telegram, Slack, WhatsApp, or Discord — just like texting a real assistant. No technical background required.
+          </p>
         </div>
       </section>
 
