@@ -289,6 +289,24 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-6xl px-6">
+          <h2 className="text-3xl font-bold md:text-4xl">What people are saying</h2>
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            {[
+              "It feels like hiring an employee rather than opening another chat window.",
+              "You’re solving a problem that people like me probably wouldn’t take the time to solve ourselves.",
+              "The hardening alone was worth it.",
+              "Super helpful in making sense of OpenClaw, integrations, memory, and workflows.",
+            ].map((quote) => (
+              <blockquote key={quote} className="rounded-xl border border-slate-200 bg-slate-50 p-5 text-slate-700">
+                “{quote}”
+              </blockquote>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-3xl font-bold md:text-4xl">Security-first by design</h2>
         <div className="mt-8 grid gap-6 md:grid-cols-2">
@@ -310,6 +328,22 @@ export default function Home() {
             ))}
           </div>
         </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <div className="rounded-2xl border border-green-200 bg-green-50 p-8">
+          <h2 className="text-3xl font-bold text-green-900">100% satisfaction guarantee</h2>
+          <p className="mt-3 text-green-800">
+            If you’re not happy with the setup, we’ll make it right. Internal draft keeps this guarantee block for parity with the sample flow.
+          </p>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <h2 className="text-3xl font-bold md:text-4xl">Already running OpenClaw?</h2>
+        <p className="mt-4 max-w-4xl text-slate-600 leading-relaxed">
+          We can audit an existing install, fix security gaps, improve hardening, and migrate to managed operations without rebuilding from scratch.
+        </p>
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-16">
