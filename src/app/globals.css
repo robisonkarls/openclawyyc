@@ -84,6 +84,11 @@ body {
 .oc-surface {
   background: var(--surface-card);
   border: 1px solid var(--border-subtle);
+  box-shadow: none;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.oc-surface:hover {
   box-shadow: 0 6px 24px var(--shadow-soft);
 }
 
