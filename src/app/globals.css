@@ -3,13 +3,35 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #f8fafc;
-  --foreground: #0f172a;
+  --background: #fcfeff;
+  --foreground: #0b1220;
+  --bg-deep: #fcfeff;
+  --bg-surface: #ffffff;
+  --text-primary: #0b1220;
+  --text-secondary: #2e405c;
+  --text-muted: #5f7290;
+  --coral-bright: #ef4b58;
+  --cyan-bright: #008f87;
+  --surface-card: rgba(255, 255, 255, 0.88);
+  --surface-card-strong: rgba(255, 255, 255, 0.95);
+  --border-subtle: rgba(15, 23, 42, 0.16);
+  --shadow-soft: rgba(11, 18, 32, 0.08);
 }
 
 .dark {
-  --background: #06070a;
-  --foreground: #e2e8f0;
+  --background: #050810;
+  --foreground: #f0f4ff;
+  --bg-deep: #050810;
+  --bg-surface: #0a0f1a;
+  --text-primary: #f0f4ff;
+  --text-secondary: #8892b0;
+  --text-muted: #5a6480;
+  --coral-bright: #ff4d4d;
+  --cyan-bright: #00e5cc;
+  --surface-card: rgba(10, 15, 26, 0.65);
+  --surface-card-strong: rgba(10, 15, 26, 0.8);
+  --border-subtle: rgba(136, 146, 176, 0.15);
+  --shadow-soft: rgba(255, 77, 77, 0.15);
 }
 
 @theme inline {
@@ -23,4 +45,32 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.oc-page {
+  background: radial-gradient(1200px 500px at 50% -120px, color-mix(in srgb, var(--cyan-bright) 12%, transparent), transparent 70%),
+    linear-gradient(to bottom, var(--bg-deep), var(--bg-surface));
+  color: var(--text-primary);
+}
+
+.oc-section {
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.oc-surface {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 6px 24px var(--shadow-soft);
+}
+
+.oc-text-secondary {
+  color: var(--text-secondary);
+}
+
+.oc-text-muted {
+  color: var(--text-muted);
+}
+
+.oc-accent {
+  color: var(--cyan-bright);
 }

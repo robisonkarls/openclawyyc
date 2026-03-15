@@ -176,15 +176,15 @@ const categories = [
 
 export default function IntegrationsPage() {
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900 dark:bg-[#06070a] dark:text-slate-100">
-      <section className="relative overflow-hidden border-b border-slate-200/80 dark:border-white/10 py-20">
+    <main className="min-h-screen oc-page">
+      <section className="relative overflow-hidden oc-section py-20">
         <div className="absolute left-1/2 top-0 h-80 w-80 -translate-x-1/2 rounded-full bg-cyan-500/20 blur-3xl" />
         <div className="relative mx-auto max-w-6xl px-6 text-center">
-          <p className="inline-block rounded-full border border-cyan-300/30 bg-cyan-400/10 px-4 py-1 text-sm font-semibold text-cyan-700 dark:text-cyan-200">
+          <p className="inline-block rounded-full border border-cyan-300/30 bg-cyan-400/10 px-4 py-1 text-sm font-semibold oc-accent">
             Integrations
           </p>
           <h1 className="mt-4 text-4xl font-bold md:text-6xl">⟩ Works With Everything</h1>
-          <p className="mx-auto mt-4 max-w-3xl text-slate-600 dark:text-slate-300 md:text-lg">
+          <p className="mx-auto mt-4 max-w-3xl oc-text-secondary md:text-lg">
             Complete integration listing organized by category to mirror the OpenClaw integrations experience.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
@@ -199,7 +199,7 @@ export default function IntegrationsPage() {
               href="https://openclaw.ai/integrations"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl border border-cyan-300/40 px-5 py-2.5 text-sm font-semibold text-cyan-700 dark:text-cyan-200 transition hover:bg-cyan-300/10"
+              className="rounded-xl border border-cyan-300/40 px-5 py-2.5 text-sm font-semibold oc-accent transition hover:bg-cyan-300/10"
             >
               Open Official Integrations Page
             </a>
@@ -216,11 +216,11 @@ export default function IntegrationsPage() {
                 {category.items.map(({ name, icon: Icon, color }) => (
                   <div
                     key={name}
-                    className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] p-4 text-center"
+                    className="rounded-2xl border oc-surface p-4 text-center"
                     title={name}
                   >
                     <Icon className={`mx-auto h-8 w-8 ${color}`} aria-hidden="true" />
-                    <p className="mt-2 text-xs text-slate-600 dark:text-slate-300">{name}</p>
+                    <p className="mt-2 text-xs oc-text-secondary">{name}</p>
                   </div>
                 ))}
               </div>

@@ -188,7 +188,7 @@ const quotes = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900 dark:bg-[#06070a] dark:text-slate-100">
+    <main className="min-h-screen oc-page">
       <header className="border-b border-slate-200/80 bg-white/80 backdrop-blur dark:border-white/10 dark:bg-black/30">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-6 py-4">
           <div className="flex items-center gap-3">
@@ -205,7 +205,7 @@ export default function Home() {
             <ThemeToggle />
             <Link
             href="#contact"
-            className="rounded-xl border border-cyan-300/40 px-4 py-2 text-sm font-semibold text-cyan-700 dark:text-cyan-200 transition hover:bg-cyan-300/10"
+            className="rounded-xl border border-cyan-300/40 px-4 py-2 text-sm font-semibold oc-accent transition hover:bg-cyan-300/10"
           >
             Book a Call
           </Link>
@@ -213,18 +213,18 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="relative overflow-hidden border-b border-slate-200/80 dark:border-white/10">
+      <section className="relative overflow-hidden oc-section">
         <div className="absolute -top-20 left-1/2 h-[36rem] w-[36rem] -translate-x-1/2 rounded-full bg-cyan-500/15 blur-3xl" />
         <div className="absolute right-0 top-20 h-80 w-80 rounded-full bg-indigo-500/20 blur-3xl" />
 
         <div className="relative mx-auto max-w-7xl px-6 py-24 md:py-32">
-          <p className="inline-block rounded-full border border-cyan-300/30 bg-cyan-400/10 px-4 py-1 text-sm font-semibold text-cyan-700 dark:text-cyan-200">
+          <p className="inline-block rounded-full border border-cyan-300/30 bg-cyan-400/10 px-4 py-1 text-sm font-semibold oc-accent">
             The AI that actually does things.
           </p>
           <h1 className="mt-6 max-w-5xl text-4xl font-bold leading-tight md:text-7xl">
             Build an Always-On Executive Assistant Stack for Your Team
           </h1>
-          <p className="mt-6 max-w-3xl text-lg text-slate-600 dark:text-slate-300 md:text-xl">
+          <p className="mt-6 max-w-3xl text-lg oc-text-secondary md:text-xl">
             Clears inboxes, sends follow-ups, manages calendars, and runs proactive workflows — all from chat apps your team already uses.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
@@ -244,7 +244,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-slate-200/80 dark:border-white/10 bg-[#0b0d12] py-12">
+      <section className="oc-section bg-white/30 py-12 dark:bg-[#0b0d12]">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-bold md:text-5xl">⟩ Works With Everything</h2>
           <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -253,7 +253,7 @@ export default function Home() {
                 key={name}
                 title={name}
                 aria-label={name}
-                className="rounded-xl border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] p-3"
+                className="rounded-xl border oc-surface p-3"
               >
                 <Icon className={`h-6 w-6 ${color}`} aria-hidden="true" />
               </div>
@@ -270,7 +270,7 @@ export default function Home() {
               href="https://openclaw.ai/integrations"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl border border-cyan-300/40 px-5 py-2.5 text-sm font-semibold text-cyan-700 dark:text-cyan-200 transition hover:bg-cyan-300/10"
+              className="rounded-xl border border-cyan-300/40 px-5 py-2.5 text-sm font-semibold oc-accent transition hover:bg-cyan-300/10"
             >
               Reference: openclaw.ai/integrations
             </a>
@@ -278,72 +278,72 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-slate-200/80 dark:border-white/10 py-16">
+      <section className="oc-section py-16">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-bold md:text-5xl">Built for</h2>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {builtFor.map((item) => (
-              <article key={item.title} className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] p-6">
+              <article key={item.title} className="rounded-2xl border oc-surface p-6">
                 <h3 className="text-xl font-semibold">{item.title}</h3>
-                <p className="mt-3 text-slate-600 dark:text-slate-300">{item.body}</p>
+                <p className="mt-3 oc-text-secondary">{item.body}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="border-b border-slate-200/80 dark:border-white/10 py-16">
+      <section className="oc-section py-16">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-bold md:text-5xl">Always on, always working</h2>
-          <p className="mt-4 max-w-4xl text-slate-600 dark:text-slate-300">
+          <p className="mt-4 max-w-4xl oc-text-secondary">
             Your assistant runs 24/7 on dedicated infrastructure. It proactively checks key systems and takes action — without waiting for prompts.
           </p>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {alwaysOn.map((item) => (
-              <div key={item.time} className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] p-5">
+              <div key={item.time} className="rounded-2xl border oc-surface p-5">
                 <p className="text-sm font-semibold uppercase tracking-wide text-cyan-300">{item.time}</p>
-                <p className="mt-2 text-slate-600 dark:text-slate-300">{item.action}</p>
+                <p className="mt-2 oc-text-secondary">{item.action}</p>
               </div>
             ))}
           </div>
-          <p className="mt-6 text-slate-600 dark:text-slate-300">
+          <p className="mt-6 oc-text-secondary">
             Message your assistant via Telegram, Slack, WhatsApp, or Discord — no technical setup required for day-to-day use.
           </p>
         </div>
       </section>
 
-      <section className="border-b border-slate-200/80 dark:border-white/10 py-16">
+      <section className="oc-section py-16">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-bold md:text-5xl">What&apos;s an Executive Agent?</h2>
-          <p className="mt-4 max-w-5xl text-slate-600 dark:text-slate-300">
+          <p className="mt-4 max-w-5xl oc-text-secondary">
             One Executive Agent equals one primary identity boundary (CEO, Sales, Finance, EA, etc.). Most teams deploy 2–6 assistants that coordinate through workflows while preserving role-specific access.
           </p>
         </div>
       </section>
 
-      <section id="how-it-works" className="border-b border-slate-200/80 dark:border-white/10 py-16">
+      <section id="how-it-works" className="oc-section py-16">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-bold md:text-5xl">How it works</h2>
           <div className="mt-8 grid gap-5 md:grid-cols-3">
             {steps.map((s) => (
-              <article key={s.number} className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] p-6">
+              <article key={s.number} className="rounded-2xl border oc-surface p-6">
                 <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-cyan-300 font-bold text-slate-900">
                   {s.number}
                 </div>
                 <h3 className="text-2xl font-bold">{s.title}</h3>
-                <p className="mt-3 text-slate-600 dark:text-slate-300">{s.body}</p>
+                <p className="mt-3 oc-text-secondary">{s.body}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="border-b border-slate-200/80 dark:border-white/10 py-16">
+      <section className="oc-section py-16">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-bold md:text-5xl">What people are saying</h2>
           <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {quotes.map((q) => (
-              <blockquote key={q} className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] p-6 text-slate-700 dark:text-slate-200">
+              <blockquote key={q} className="rounded-2xl border oc-surface p-6 oc-text-secondary">
                 “{q}”
               </blockquote>
             ))}
@@ -351,13 +351,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-slate-200/80 dark:border-white/10 py-16">
+      <section className="oc-section py-16">
         <div className="mx-auto grid max-w-7xl gap-6 px-6 md:grid-cols-2">
           <div>
             <h2 className="text-3xl font-bold md:text-5xl">Why teams hire us</h2>
             <div className="mt-6 space-y-3">
               {whyUs.map((line) => (
-                <div key={line} className="rounded-xl border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] p-4 text-slate-600 dark:text-slate-300">
+                <div key={line} className="rounded-xl border oc-surface p-4 oc-text-secondary">
                   • {line}
                 </div>
               ))}
@@ -367,7 +367,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold md:text-5xl">Security-first by design</h2>
             <div className="mt-6 space-y-3">
               {security.map((line) => (
-                <div key={line} className="rounded-xl border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] p-4 text-slate-600 dark:text-slate-300">
+                <div key={line} className="rounded-xl border oc-surface p-4 oc-text-secondary">
                   ✓ {line}
                 </div>
               ))}
@@ -376,44 +376,44 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-slate-200/80 dark:border-white/10 py-16">
+      <section className="oc-section py-16">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-bold md:text-5xl">Already running OpenClaw?</h2>
-          <p className="mt-4 max-w-4xl text-slate-600 dark:text-slate-300">
+          <p className="mt-4 max-w-4xl oc-text-secondary">
             We can audit your existing setup, fix security gaps, improve reliability, and migrate you to managed operations without rebuilding from scratch.
           </p>
         </div>
       </section>
 
-      <section className="border-b border-slate-200/80 dark:border-white/10 py-16">
+      <section className="oc-section py-16">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-bold md:text-5xl">After you purchase</h2>
           <div className="mt-8 grid gap-4 md:grid-cols-3">
             {afterPurchase.map((item) => (
-              <article key={item.label} className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] p-6">
+              <article key={item.label} className="rounded-2xl border oc-surface p-6">
                 <h3 className="text-lg font-bold text-cyan-300">{item.label}</h3>
-                <p className="mt-2 text-slate-600 dark:text-slate-300">{item.body}</p>
+                <p className="mt-2 oc-text-secondary">{item.body}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="border-b border-slate-200/80 dark:border-white/10 py-16">
+      <section className="oc-section py-16">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-bold md:text-5xl">FAQ</h2>
           <div className="mt-8 space-y-3">
             {faqs.map((faq) => (
-              <details key={faq.q} className="rounded-xl border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] p-5">
-                <summary className="cursor-pointer text-lg font-semibold text-cyan-700 dark:text-cyan-200">{faq.q}</summary>
-                <p className="mt-3 text-slate-600 dark:text-slate-300">{faq.a}</p>
+              <details key={faq.q} className="rounded-xl border oc-surface p-5">
+                <summary className="cursor-pointer text-lg font-semibold oc-accent">{faq.q}</summary>
+                <p className="mt-3 oc-text-secondary">{faq.a}</p>
               </details>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="border-b border-slate-200/80 dark:border-white/10 py-16">
+      <section className="oc-section py-16">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-bold md:text-5xl">Learn more</h2>
           <div className="mt-8 space-y-3">
@@ -429,7 +429,7 @@ export default function Home() {
               <Link
                 key={item.title}
                 href={item.href}
-                className="group flex items-center justify-between rounded-xl border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] px-5 py-4 transition hover:border-cyan-300/40 hover:bg-slate-200 dark:hover:bg-white/[0.06]"
+                className="group flex items-center justify-between rounded-xl border oc-surface px-5 py-4 transition hover:border-cyan-300/40 hover:bg-slate-200 dark:hover:bg-white/[0.06]"
               >
                 <span className="font-medium">{item.title}</span>
                 <span className="text-cyan-300 transition-transform group-hover:translate-x-1">→</span>
@@ -439,13 +439,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-slate-200/80 dark:border-white/10 py-16">
+      <section className="oc-section py-16">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-bold md:text-5xl">Available across Calgary Region</h2>
-          <p className="mt-4 text-slate-600 dark:text-slate-300">Remote-first deployment with optional local support. Don&apos;t see your city? Book a call.</p>
+          <p className="mt-4 oc-text-secondary">Remote-first deployment with optional local support. Don&apos;t see your city? Book a call.</p>
           <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
             {cities.map((city) => (
-              <div key={city} className="rounded-lg border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] px-3 py-2 text-sm text-slate-700 dark:text-slate-200">
+              <div key={city} className="rounded-lg border oc-surface px-3 py-2 text-sm oc-text-secondary">
                 {city}
               </div>
             ))}
@@ -456,7 +456,7 @@ export default function Home() {
       <section id="contact" className="py-20">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <h2 className="text-3xl font-bold md:text-5xl">Ready to go live?</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-slate-600 dark:text-slate-300">
+          <p className="mx-auto mt-4 max-w-2xl oc-text-secondary">
             We can deploy this stack for your Calgary team with security-first implementation and managed support.
           </p>
           <a
