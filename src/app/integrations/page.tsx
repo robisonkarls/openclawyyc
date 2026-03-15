@@ -176,9 +176,9 @@ const categories = [
 
 export default function IntegrationsPage() {
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900 dark:bg-[#06070a] dark:text-slate-100">
+    <main className="min-h-screen bg-gradient-to-b from-[#f4f8ff] via-[#f8fbff] to-white text-slate-900 dark:bg-[#06070a] dark:text-slate-100">
       <section className="relative overflow-hidden border-b border-slate-200/80 dark:border-white/10 py-20">
-        <div className="absolute left-1/2 top-0 h-80 w-80 -translate-x-1/2 rounded-full bg-cyan-500/20 blur-3xl" />
+        <div className="absolute left-1/2 top-0 h-80 w-80 -translate-x-1/2 rounded-full bg-cyan-400/25 blur-3xl dark:bg-cyan-500/20" />
         <div className="relative mx-auto max-w-6xl px-6 text-center">
           <p className="inline-block rounded-full border border-cyan-300/30 bg-cyan-400/10 px-4 py-1 text-sm font-semibold text-cyan-700 dark:text-cyan-200">
             Integrations
@@ -216,7 +216,7 @@ export default function IntegrationsPage() {
                 {category.items.map(({ name, icon: Icon, color }) => (
                   <div
                     key={name}
-                    className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] p-4 text-center"
+                    className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-white/80 shadow-sm shadow-cyan-900/[0.06] dark:bg-white/[0.03] p-4 text-center"
                     title={name}
                   >
                     <Icon className={`mx-auto h-8 w-8 ${color}`} aria-hidden="true" />

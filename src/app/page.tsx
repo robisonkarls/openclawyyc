@@ -188,8 +188,8 @@ const quotes = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900 dark:bg-[#06070a] dark:text-slate-100">
-      <header className="border-b border-slate-200/80 bg-white/80 backdrop-blur dark:border-white/10 dark:bg-black/30">
+    <main className="min-h-screen bg-gradient-to-b from-[#f4f8ff] via-[#f8fbff] to-white text-slate-900 dark:bg-[#06070a] dark:text-slate-100">
+      <header className="border-b border-slate-200/80 bg-white/70 backdrop-blur-xl dark:border-white/10 dark:bg-black/30">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-6 py-4">
           <div className="flex items-center gap-3">
             <Image
@@ -214,8 +214,8 @@ export default function Home() {
       </header>
 
       <section className="relative overflow-hidden border-b border-slate-200/80 dark:border-white/10">
-        <div className="absolute -top-20 left-1/2 h-[36rem] w-[36rem] -translate-x-1/2 rounded-full bg-cyan-500/15 blur-3xl" />
-        <div className="absolute right-0 top-20 h-80 w-80 rounded-full bg-indigo-500/20 blur-3xl" />
+        <div className="absolute -top-20 left-1/2 h-[36rem] w-[36rem] -translate-x-1/2 rounded-full bg-cyan-400/25 blur-3xl dark:bg-cyan-500/15" />
+        <div className="absolute right-0 top-20 h-80 w-80 rounded-full bg-indigo-300/30 blur-3xl dark:bg-indigo-500/20" />
 
         <div className="relative mx-auto max-w-7xl px-6 py-24 md:py-32">
           <p className="inline-block rounded-full border border-cyan-300/30 bg-cyan-400/10 px-4 py-1 text-sm font-semibold text-cyan-700 dark:text-cyan-200">
@@ -244,7 +244,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-slate-200/80 dark:border-white/10 bg-[#0b0d12] py-12">
+      <section className="border-b border-slate-200/80 bg-white/60 py-12 dark:border-white/10 dark:bg-[#0b0d12]">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-bold md:text-5xl">⟩ Works With Everything</h2>
           <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -253,7 +253,7 @@ export default function Home() {
                 key={name}
                 title={name}
                 aria-label={name}
-                className="rounded-xl border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] p-3"
+                className="rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/80 shadow-sm shadow-cyan-900/[0.06] dark:bg-white/[0.03] p-3"
               >
                 <Icon className={`h-6 w-6 ${color}`} aria-hidden="true" />
               </div>
@@ -283,7 +283,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold md:text-5xl">Built for</h2>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {builtFor.map((item) => (
-              <article key={item.title} className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] p-6">
+              <article key={item.title} className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-white/80 shadow-sm shadow-cyan-900/[0.06] dark:bg-white/[0.03] p-6">
                 <h3 className="text-xl font-semibold">{item.title}</h3>
                 <p className="mt-3 text-slate-600 dark:text-slate-300">{item.body}</p>
               </article>
@@ -300,7 +300,7 @@ export default function Home() {
           </p>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {alwaysOn.map((item) => (
-              <div key={item.time} className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] p-5">
+              <div key={item.time} className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-white/80 shadow-sm shadow-cyan-900/[0.06] dark:bg-white/[0.03] p-5">
                 <p className="text-sm font-semibold uppercase tracking-wide text-cyan-300">{item.time}</p>
                 <p className="mt-2 text-slate-600 dark:text-slate-300">{item.action}</p>
               </div>
@@ -326,7 +326,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold md:text-5xl">How it works</h2>
           <div className="mt-8 grid gap-5 md:grid-cols-3">
             {steps.map((s) => (
-              <article key={s.number} className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] p-6">
+              <article key={s.number} className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-white/80 shadow-sm shadow-cyan-900/[0.06] dark:bg-white/[0.03] p-6">
                 <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-cyan-300 font-bold text-slate-900">
                   {s.number}
                 </div>
@@ -343,7 +343,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold md:text-5xl">What people are saying</h2>
           <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {quotes.map((q) => (
-              <blockquote key={q} className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] p-6 text-slate-700 dark:text-slate-200">
+              <blockquote key={q} className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-white/80 shadow-sm shadow-cyan-900/[0.06] dark:bg-white/[0.03] p-6 text-slate-700 dark:text-slate-200">
                 “{q}”
               </blockquote>
             ))}
@@ -357,7 +357,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold md:text-5xl">Why teams hire us</h2>
             <div className="mt-6 space-y-3">
               {whyUs.map((line) => (
-                <div key={line} className="rounded-xl border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] p-4 text-slate-600 dark:text-slate-300">
+                <div key={line} className="rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/80 shadow-sm shadow-cyan-900/[0.06] dark:bg-white/[0.03] p-4 text-slate-600 dark:text-slate-300">
                   • {line}
                 </div>
               ))}
@@ -367,7 +367,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold md:text-5xl">Security-first by design</h2>
             <div className="mt-6 space-y-3">
               {security.map((line) => (
-                <div key={line} className="rounded-xl border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] p-4 text-slate-600 dark:text-slate-300">
+                <div key={line} className="rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/80 shadow-sm shadow-cyan-900/[0.06] dark:bg-white/[0.03] p-4 text-slate-600 dark:text-slate-300">
                   ✓ {line}
                 </div>
               ))}
@@ -390,7 +390,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold md:text-5xl">After you purchase</h2>
           <div className="mt-8 grid gap-4 md:grid-cols-3">
             {afterPurchase.map((item) => (
-              <article key={item.label} className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] p-6">
+              <article key={item.label} className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-white/80 shadow-sm shadow-cyan-900/[0.06] dark:bg-white/[0.03] p-6">
                 <h3 className="text-lg font-bold text-cyan-300">{item.label}</h3>
                 <p className="mt-2 text-slate-600 dark:text-slate-300">{item.body}</p>
               </article>
@@ -404,7 +404,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold md:text-5xl">FAQ</h2>
           <div className="mt-8 space-y-3">
             {faqs.map((faq) => (
-              <details key={faq.q} className="rounded-xl border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] p-5">
+              <details key={faq.q} className="rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/80 shadow-sm shadow-cyan-900/[0.06] dark:bg-white/[0.03] p-5">
                 <summary className="cursor-pointer text-lg font-semibold text-cyan-700 dark:text-cyan-200">{faq.q}</summary>
                 <p className="mt-3 text-slate-600 dark:text-slate-300">{faq.a}</p>
               </details>
@@ -429,7 +429,7 @@ export default function Home() {
               <Link
                 key={item.title}
                 href={item.href}
-                className="group flex items-center justify-between rounded-xl border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] px-5 py-4 transition hover:border-cyan-300/40 hover:bg-slate-200 dark:hover:bg-white/[0.06]"
+                className="group flex items-center justify-between rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/80 shadow-sm shadow-cyan-900/[0.06] dark:bg-white/[0.03] px-5 py-4 transition hover:border-cyan-300/40 hover:bg-slate-200 dark:hover:bg-white/[0.06]"
               >
                 <span className="font-medium">{item.title}</span>
                 <span className="text-cyan-300 transition-transform group-hover:translate-x-1">→</span>
@@ -445,7 +445,7 @@ export default function Home() {
           <p className="mt-4 text-slate-600 dark:text-slate-300">Remote-first deployment with optional local support. Don&apos;t see your city? Book a call.</p>
           <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
             {cities.map((city) => (
-              <div key={city} className="rounded-lg border border-slate-200/80 dark:border-white/10 bg-slate-100/80 dark:bg-white/[0.03] px-3 py-2 text-sm text-slate-700 dark:text-slate-200">
+              <div key={city} className="rounded-lg border border-slate-200/80 dark:border-white/10 bg-white/80 shadow-sm shadow-cyan-900/[0.06] dark:bg-white/[0.03] px-3 py-2 text-sm text-slate-700 dark:text-slate-200">
                 {city}
               </div>
             ))}
