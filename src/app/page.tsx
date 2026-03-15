@@ -246,7 +246,7 @@ export default function Home() {
 
       <section className="border-b border-slate-200/80 bg-white/60 py-12 dark:border-white/10 dark:bg-[#0b0d12]">
         <div className="mx-auto max-w-7xl px-6">
-          <h2 className="text-3xl font-bold tracking-tight md:text-6xl">⟩ Works With Everything</h2>
+          <h2 className="text-3xl font-bold md:text-5xl">⟩ Works With Everything</h2>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             {integrations.map(({ name, icon: Icon, color }) => (
               <div
@@ -278,10 +278,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-slate-200/80 dark:border-white/10 py-20">
+      <section className="border-b border-slate-200/80 dark:border-white/10 py-16">
         <div className="mx-auto max-w-7xl px-6">
-          <h2 className="text-3xl font-bold tracking-tight md:text-6xl">Built for</h2>
-          <div className="mt-10 grid gap-6 md:grid-cols-2">
+          <h2 className="text-3xl font-bold md:text-5xl">Built for</h2>
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
             {builtFor.map((item) => (
               <article key={item.title} className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-white/80 shadow-sm shadow-cyan-900/[0.06] dark:bg-white/[0.03] p-6">
                 <h3 className="text-xl font-semibold">{item.title}</h3>
@@ -292,13 +292,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-slate-200/80 dark:border-white/10 py-20">
+      <section className="border-b border-slate-200/80 dark:border-white/10 py-16">
         <div className="mx-auto max-w-7xl px-6">
-          <h2 className="text-3xl font-bold tracking-tight md:text-6xl">Always on, always working</h2>
+          <h2 className="text-3xl font-bold md:text-5xl">Always on, always working</h2>
           <p className="mt-4 max-w-4xl text-slate-600 dark:text-slate-300">
             Your assistant runs 24/7 on dedicated infrastructure. It proactively checks key systems and takes action — without waiting for prompts.
           </p>
-          <div className="mt-10 grid gap-6 md:grid-cols-2">
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
             {alwaysOn.map((item) => (
               <div key={item.time} className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-white/80 shadow-sm shadow-cyan-900/[0.06] dark:bg-white/[0.03] p-5">
                 <p className="text-sm font-semibold uppercase tracking-wide text-cyan-300">{item.time}</p>
@@ -312,19 +312,19 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-slate-200/80 dark:border-white/10 py-20">
+      <section className="border-b border-slate-200/80 dark:border-white/10 py-16">
         <div className="mx-auto max-w-7xl px-6">
-          <h2 className="text-3xl font-bold tracking-tight md:text-6xl">What&apos;s an Executive Agent?</h2>
+          <h2 className="text-3xl font-bold md:text-5xl">What&apos;s an Executive Agent?</h2>
           <p className="mt-4 max-w-5xl text-slate-600 dark:text-slate-300">
             One Executive Agent equals one primary identity boundary (CEO, Sales, Finance, EA, etc.). Most teams deploy 2–6 assistants that coordinate through workflows while preserving role-specific access.
           </p>
         </div>
       </section>
 
-      <section id="how-it-works" className="border-b border-slate-200/80 dark:border-white/10 py-20">
+      <section id="how-it-works" className="border-b border-slate-200/80 dark:border-white/10 py-16">
         <div className="mx-auto max-w-7xl px-6">
-          <h2 className="text-3xl font-bold tracking-tight md:text-6xl">How it works</h2>
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <h2 className="text-3xl font-bold md:text-5xl">How it works</h2>
+          <div className="mt-8 grid gap-5 md:grid-cols-3">
             {steps.map((s) => (
               <article key={s.number} className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-white/80 shadow-sm shadow-cyan-900/[0.06] dark:bg-white/[0.03] p-6">
                 <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-cyan-300 font-bold text-slate-900">
@@ -338,10 +338,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-slate-200/80 dark:border-white/10 py-20">
+      <section className="border-b border-slate-200/80 dark:border-white/10 py-16">
         <div className="mx-auto max-w-7xl px-6">
-          <h2 className="text-3xl font-bold tracking-tight md:text-6xl">What people are saying</h2>
-          <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <h2 className="text-3xl font-bold md:text-5xl">What people are saying</h2>
+          <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {quotes.map((q) => (
               <blockquote key={q} className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-white/80 shadow-sm shadow-cyan-900/[0.06] dark:bg-white/[0.03] p-6 text-slate-700 dark:text-slate-200">
                 “{q}”
@@ -351,10 +351,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-slate-200/80 dark:border-white/10 py-20">
+      <section className="border-b border-slate-200/80 dark:border-white/10 py-16">
         <div className="mx-auto grid max-w-7xl gap-6 px-6 md:grid-cols-2">
           <div>
-            <h2 className="text-3xl font-bold tracking-tight md:text-6xl">Why teams hire us</h2>
+            <h2 className="text-3xl font-bold md:text-5xl">Why teams hire us</h2>
             <div className="mt-6 space-y-3">
               {whyUs.map((line) => (
                 <div key={line} className="rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/80 shadow-sm shadow-cyan-900/[0.06] dark:bg-white/[0.03] p-4 text-slate-600 dark:text-slate-300">
@@ -364,7 +364,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <h2 className="text-3xl font-bold tracking-tight md:text-6xl">Security-first by design</h2>
+            <h2 className="text-3xl font-bold md:text-5xl">Security-first by design</h2>
             <div className="mt-6 space-y-3">
               {security.map((line) => (
                 <div key={line} className="rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/80 shadow-sm shadow-cyan-900/[0.06] dark:bg-white/[0.03] p-4 text-slate-600 dark:text-slate-300">
@@ -376,19 +376,19 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-slate-200/80 dark:border-white/10 py-20">
+      <section className="border-b border-slate-200/80 dark:border-white/10 py-16">
         <div className="mx-auto max-w-7xl px-6">
-          <h2 className="text-3xl font-bold tracking-tight md:text-6xl">Already running OpenClaw?</h2>
+          <h2 className="text-3xl font-bold md:text-5xl">Already running OpenClaw?</h2>
           <p className="mt-4 max-w-4xl text-slate-600 dark:text-slate-300">
             We can audit your existing setup, fix security gaps, improve reliability, and migrate you to managed operations without rebuilding from scratch.
           </p>
         </div>
       </section>
 
-      <section className="border-b border-slate-200/80 dark:border-white/10 py-20">
+      <section className="border-b border-slate-200/80 dark:border-white/10 py-16">
         <div className="mx-auto max-w-7xl px-6">
-          <h2 className="text-3xl font-bold tracking-tight md:text-6xl">After you purchase</h2>
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <h2 className="text-3xl font-bold md:text-5xl">After you purchase</h2>
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
             {afterPurchase.map((item) => (
               <article key={item.label} className="rounded-2xl border border-slate-200/80 dark:border-white/10 bg-white/80 shadow-sm shadow-cyan-900/[0.06] dark:bg-white/[0.03] p-6">
                 <h3 className="text-lg font-bold text-cyan-300">{item.label}</h3>
@@ -399,10 +399,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-slate-200/80 dark:border-white/10 py-20">
+      <section className="border-b border-slate-200/80 dark:border-white/10 py-16">
         <div className="mx-auto max-w-7xl px-6">
-          <h2 className="text-3xl font-bold tracking-tight md:text-6xl">FAQ</h2>
-          <div className="mt-10 space-y-4">
+          <h2 className="text-3xl font-bold md:text-5xl">FAQ</h2>
+          <div className="mt-8 space-y-3">
             {faqs.map((faq) => (
               <details key={faq.q} className="rounded-xl border border-slate-200/80 dark:border-white/10 bg-white/80 shadow-sm shadow-cyan-900/[0.06] dark:bg-white/[0.03] p-5">
                 <summary className="cursor-pointer text-lg font-semibold text-cyan-700 dark:text-cyan-200">{faq.q}</summary>
@@ -413,10 +413,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-slate-200/80 dark:border-white/10 py-20">
+      <section className="border-b border-slate-200/80 dark:border-white/10 py-16">
         <div className="mx-auto max-w-7xl px-6">
-          <h2 className="text-3xl font-bold tracking-tight md:text-6xl">Learn more</h2>
-          <div className="mt-10 space-y-4">
+          <h2 className="text-3xl font-bold md:text-5xl">Learn more</h2>
+          <div className="mt-8 space-y-3">
             {[
               { title: "What is OpenClaw?", href: "/learn-more/what-is-openclaw" },
               {
@@ -439,9 +439,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-slate-200/80 dark:border-white/10 py-20">
+      <section className="border-b border-slate-200/80 dark:border-white/10 py-16">
         <div className="mx-auto max-w-7xl px-6">
-          <h2 className="text-3xl font-bold tracking-tight md:text-6xl">Available across Calgary Region</h2>
+          <h2 className="text-3xl font-bold md:text-5xl">Available across Calgary Region</h2>
           <p className="mt-4 text-slate-600 dark:text-slate-300">Remote-first deployment with optional local support. Don&apos;t see your city? Book a call.</p>
           <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
             {cities.map((city) => (
@@ -455,7 +455,7 @@ export default function Home() {
 
       <section id="contact" className="py-20">
         <div className="mx-auto max-w-4xl px-6 text-center">
-          <h2 className="text-3xl font-bold tracking-tight md:text-6xl">Ready to go live?</h2>
+          <h2 className="text-3xl font-bold md:text-5xl">Ready to go live?</h2>
           <p className="mx-auto mt-4 max-w-2xl text-slate-600 dark:text-slate-300">
             We can deploy this stack for your Calgary team with security-first implementation and managed support.
           </p>
