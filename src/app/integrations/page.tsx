@@ -69,12 +69,12 @@ const categories = [
       { name: "iMessage Personal", icon: SiImessage, color: "text-[#34C759]" },
       { name: "Microsoft Teams", icon: FaCommentDots, color: "text-[#6264A7]" },
       { name: "Nextcloud Talk", icon: SiNextcloud, color: "text-[#0082C9]" },
-      { name: "Matrix", icon: SiMatrix, color: "text-slate-700 dark:text-[#E5E7EB]" },
+      { name: "Matrix", icon: SiMatrix, color: "text-[color:var(--text-secondary)]" },
       { name: "Nostr", icon: FaHashtag, color: "text-[#9333EA]" },
       { name: "Tlon Messenger", icon: FaCommentDots, color: "text-[#22D3EE]" },
       { name: "Zalo", icon: SiZalo, color: "text-[#0068FF]" },
       { name: "Zalo Personal", icon: SiZalo, color: "text-[#0068FF]" },
-      { name: "WebChat", icon: FaCommentDots, color: "text-slate-700 dark:text-[#E5E7EB]" },
+      { name: "WebChat", icon: FaCommentDots, color: "text-[color:var(--text-secondary)]" },
     ],
   },
   {
@@ -84,8 +84,8 @@ const categories = [
       { name: "OpenAI", icon: SiOpenai, color: "text-[#10A37F]" },
       { name: "Google", icon: SiGoogle, color: "text-[#4285F4]" },
       { name: "MiniMax", icon: FaRobot, color: "text-[#F97316]" },
-      { name: "xAI", icon: SiX, color: "text-slate-700 dark:text-[#E5E7EB]" },
-      { name: "Vercel AI Gateway", icon: FaRobot, color: "text-slate-700 dark:text-[#E5E7EB]" },
+      { name: "xAI", icon: SiX, color: "text-[color:var(--text-secondary)]" },
+      { name: "Vercel AI Gateway", icon: FaRobot, color: "text-[color:var(--text-secondary)]" },
       { name: "OpenRouter", icon: FaRobot, color: "text-[#8B5CF6]" },
       { name: "Mistral", icon: FaRobot, color: "text-[#F97316]" },
       { name: "DeepSeek", icon: FaRobot, color: "text-[#2563EB]" },
@@ -101,18 +101,18 @@ const categories = [
       { name: "Apple Notes", icon: FaStickyNote, color: "text-[#F59E0B]" },
       { name: "Apple Reminders", icon: FaCheck, color: "text-[#3B82F6]" },
       { name: "Things 3", icon: FaClipboardList, color: "text-[#DC2626]" },
-      { name: "Notion", icon: SiNotion, color: "text-slate-700 dark:text-[#E5E7EB]" },
+      { name: "Notion", icon: SiNotion, color: "text-[color:var(--text-secondary)]" },
       { name: "Obsidian", icon: SiObsidian, color: "text-[#7C3AED]" },
       { name: "Bear Notes", icon: FaClipboardList, color: "text-[#F59E0B]" },
       { name: "Trello", icon: SiTrello, color: "text-[#0079BF]" },
-      { name: "GitHub", icon: SiGithub, color: "text-slate-700 dark:text-[#E5E7EB]" },
+      { name: "GitHub", icon: SiGithub, color: "text-[color:var(--text-secondary)]" },
     ],
   },
   {
     title: "Music & Audio",
     items: [
       { name: "Spotify", icon: SiSpotify, color: "text-[#1DB954]" },
-      { name: "Sonos", icon: SiSonos, color: "text-slate-700 dark:text-[#E5E7EB]" },
+      { name: "Sonos", icon: SiSonos, color: "text-[color:var(--text-secondary)]" },
       { name: "Shazam", icon: SiShazam, color: "text-[#1D9BF0]" },
     ],
   },
@@ -131,7 +131,7 @@ const categories = [
       { name: "Canvas", icon: FaClipboardList, color: "text-[#A78BFA]" },
       { name: "Voice", icon: FaMicrophone, color: "text-[#22D3EE]" },
       { name: "Gmail", icon: SiGmail, color: "text-[#EA4335]" },
-      { name: "Cron", icon: FaClock, color: "text-slate-700 dark:text-[#E5E7EB]" },
+      { name: "Cron", icon: FaClock, color: "text-[color:var(--text-secondary)]" },
       { name: "Webhooks", icon: FaLink, color: "text-[#38BDF8]" },
       { name: "1Password", icon: Si1Password, color: "text-[#3B82F6]" },
       { name: "Weather", icon: FaCloudSun, color: "text-[#FACC15]" },
@@ -142,22 +142,22 @@ const categories = [
     items: [
       { name: "Image Gen", icon: FaImage, color: "text-[#A78BFA]" },
       { name: "GIF Search", icon: SiGiphy, color: "text-[#22D3EE]" },
-      { name: "Peekaboo", icon: FaCamera, color: "text-slate-700 dark:text-[#E5E7EB]" },
+      { name: "Peekaboo", icon: FaCamera, color: "text-[color:var(--text-secondary)]" },
       { name: "Camera", icon: FaCamera, color: "text-[#38BDF8]" },
     ],
   },
   {
     title: "Social",
     items: [
-      { name: "Twitter/X", icon: SiX, color: "text-slate-700 dark:text-[#E5E7EB]" },
+      { name: "Twitter/X", icon: SiX, color: "text-[color:var(--text-secondary)]" },
       { name: "Email", icon: FaEnvelope, color: "text-[#F87171]" },
     ],
   },
   {
     title: "Platforms",
     items: [
-      { name: "macOS", icon: SiMacos, color: "text-slate-700 dark:text-[#E5E7EB]" },
-      { name: "iOS", icon: SiIos, color: "text-slate-700 dark:text-[#E5E7EB]" },
+      { name: "macOS", icon: SiMacos, color: "text-[color:var(--text-secondary)]" },
+      { name: "iOS", icon: SiIos, color: "text-[color:var(--text-secondary)]" },
       { name: "Android", icon: SiAndroid, color: "text-[#3DDC84]" },
       { name: "Windows", icon: FaWindows, color: "text-[#00A4EF]" },
       { name: "Linux", icon: SiLinux, color: "text-[#EAB308]" },
@@ -178,7 +178,7 @@ export default function IntegrationsPage() {
   return (
     <main className="min-h-screen oc-page">
       <section className="relative overflow-hidden oc-section py-20">
-        <div className="absolute left-1/2 top-0 h-80 w-80 -translate-x-1/2 rounded-full bg-cyan-500/20 blur-3xl" />
+        <div className="absolute left-1/2 top-0 h-80 w-80 -translate-x-1/2 rounded-full bg-[color:var(--coral-bright)]/20 blur-3xl" />
         <div className="relative mx-auto max-w-6xl px-6 text-center">
           <p className="inline-block rounded-full border border-[color:var(--coral-bright)]/30 bg-[color:var(--coral-bright)]/10 px-4 py-1 text-sm font-semibold oc-accent">
             Integrations

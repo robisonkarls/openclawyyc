@@ -31,10 +31,10 @@ const integrations = [
   { name: "Spotify", icon: SiSpotify, color: "text-[#1DB954]" },
   { name: "Hue", icon: SiPhilipshue, color: "text-[#F59E0B]" },
   { name: "Obsidian", icon: SiObsidian, color: "text-[#7C3AED]" },
-  { name: "Twitter", icon: SiX, color: "text-slate-700 dark:text-[#E5E7EB]" },
+  { name: "Twitter", icon: SiX, color: "text-[color:var(--text-secondary)]" },
   { name: "Browser", icon: SiGooglechrome, color: "text-[#FBBF24]" },
   { name: "Gmail", icon: SiGmail, color: "text-[#EA4335]" },
-  { name: "GitHub", icon: SiGithub, color: "text-slate-700 dark:text-[#E5E7EB]" },
+  { name: "GitHub", icon: SiGithub, color: "text-[color:var(--text-secondary)]" },
 ];
 
 const builtFor = [
@@ -214,8 +214,8 @@ export default function Home() {
       </header>
 
       <section className="relative overflow-hidden oc-section">
-        <div className="absolute -top-20 left-1/2 h-[36rem] w-[36rem] -translate-x-1/2 rounded-full bg-cyan-500/15 blur-3xl" />
-        <div className="absolute right-0 top-20 h-80 w-80 rounded-full bg-indigo-500/20 blur-3xl" />
+        <div className="absolute -top-20 left-1/2 h-[36rem] w-[36rem] -translate-x-1/2 rounded-full bg-[color:var(--coral-bright)]/15 blur-3xl" />
+        <div className="absolute right-0 top-20 h-80 w-80 rounded-full bg-[color:var(--cyan-bright)]/20 blur-3xl" />
 
         <div className="relative mx-auto max-w-7xl px-6 py-24 md:py-32">
           <p className="inline-block rounded-full border border-[color:var(--coral-bright)]/30 bg-[color:var(--coral-bright)]/10 px-4 py-1 text-sm font-semibold oc-accent">
