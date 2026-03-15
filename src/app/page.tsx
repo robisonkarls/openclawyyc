@@ -189,7 +189,7 @@ const quotes = [
 export default function Home() {
   return (
     <main className="min-h-screen oc-page">
-      <header className="sticky top-0 z-20 border-b border-[color:var(--border-subtle)] bg-white/70 backdrop-blur-xl dark:bg-black/30">
+      <header className="sticky top-0 z-20 border-b border-[color:var(--border-subtle)] bg-[color:var(--surface-card)]/90 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-6 py-4">
           <div className="flex items-center gap-3">
             <Image
@@ -238,7 +238,7 @@ export default function Home() {
             </Link>
             <Link
               href="#how-it-works"
-              className="rounded-xl border border-[color:var(--border-subtle)] px-6 py-3 font-semibold oc-text-secondary transition hover:-translate-y-0.5 hover:bg-slate-100 dark:hover:bg-white/10"
+              className="rounded-xl border border-[color:var(--border-subtle)] px-6 py-3 font-semibold oc-text-secondary transition hover:-translate-y-0.5 hover:bg-[color:var(--surface-card-strong)]"
             >
               See How It Works
             </Link>
@@ -246,7 +246,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="oc-section bg-white/30 py-14 dark:bg-[#0b0d12]">
+      <section className="oc-section bg-[color:var(--surface-card)]/50 py-14">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-3xl font-bold tracking-tight md:text-6xl">⟩ Works With Everything</h2>
           <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -431,7 +431,7 @@ export default function Home() {
               <Link
                 key={item.title}
                 href={item.href}
-                className="group flex items-center justify-between rounded-xl oc-surface px-5 py-4 transition hover:-translate-y-0.5 hover:border-[color:var(--coral-bright)] hover:bg-slate-200 dark:hover:bg-white/[0.06]"
+                className="group flex items-center justify-between rounded-xl oc-surface px-5 py-4 transition hover:-translate-y-0.5 hover:border-[color:var(--coral-bright)] hover:bg-[color:var(--surface-card-strong)]"
               >
                 <span className="font-medium">{item.title}</span>
                 <span className="oc-accent transition-transform group-hover:translate-x-1">→</span>

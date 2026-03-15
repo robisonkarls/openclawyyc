@@ -22,7 +22,7 @@ export function ThemeToggle() {
   }
 
   return (
-    <div className="inline-flex rounded-xl border border-slate-300 bg-white/80 p-1 text-xs dark:border-white/20 dark:bg-black/30">
+    <div className="inline-flex rounded-xl border border-[color:var(--border-subtle)] bg-[color:var(--surface-card)] p-1 text-xs">
       {options.map((option) => {
         const isActive = theme === option.value;
 
@@ -33,8 +33,8 @@ export function ThemeToggle() {
             onClick={() => setTheme(option.value)}
             className={`rounded-lg px-3 py-1.5 font-semibold transition ${
               isActive
-                ? "bg-cyan-300 text-slate-900"
-                : "text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-white/10"
+                ? "bg-[color:var(--coral-bright)] text-white"
+                : "text-[color:var(--text-secondary)] hover:bg-[color:var(--surface-card-strong)]"
             }`}
           >
             {option.label}

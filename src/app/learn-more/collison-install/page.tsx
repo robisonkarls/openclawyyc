@@ -11,7 +11,7 @@ export default function Page() {
           <h1 className="mt-3 text-4xl font-bold leading-tight md:text-6xl">What is a Collison Install?</h1>
           <Link
             href="/"
-            className="mt-6 inline-block rounded-xl border border-[color:var(--border-subtle)] px-4 py-2 text-sm font-semibold oc-accent transition hover:bg-white/60 dark:hover:bg-white/10"
+            className="mt-6 inline-block rounded-xl border border-[color:var(--border-subtle)] px-4 py-2 text-sm font-semibold oc-accent transition hover:bg-[color:var(--surface-card-strong)]"
           >
             ← Back to main page
           </Link>
