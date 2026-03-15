@@ -221,7 +221,7 @@ export default function Home() {
           <p className="inline-block rounded-full border border-[color:var(--coral-bright)]/30 bg-[color:var(--coral-bright)]/10 px-4 py-1 text-sm font-semibold oc-accent">
             The AI that actually does things.
           </p>
-          <h1 className="mt-6 max-w-5xl text-3xl font-bold leading-tight tracking-tight md:text-4xl">
+          <h1 className="mt-6 max-w-5xl text-4xl font-bold leading-tight tracking-tight md:text-5xl">
             <span className="bg-gradient-to-br from-[color:var(--text-primary)] via-[color:var(--coral-bright)] to-[color:var(--cyan-bright)] bg-clip-text text-transparent">
               Build an Always-On Executive Assistant Stack for Your Team
             </span>
