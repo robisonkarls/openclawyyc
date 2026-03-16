@@ -199,7 +199,7 @@ export default function Home() {
               height={28}
               className="h-6 w-auto"
             />
-            <span className="text-xs uppercase tracking-wider oc-accent">Calgary Services</span>
+            <span className="text-xs uppercase tracking-wider oc-accent">OpenClawYYC</span>
           </div>
           <div className="flex items-center gap-3">
             <ThemeToggle />

@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tsunami AI Assistant Services | Calgary",
+  title: "OpenClawYYC | Calgary",
   description:
-    "White-glove AI assistant deployment and managed care for founders and executive teams in Calgary.",
+    "OpenClawYYC provides AI assistant deployment and managed operations for Calgary teams.",
 };
 
 export default function RootLayout({
