@@ -204,7 +204,7 @@ export default function Home() {
           <div className="flex items-center gap-3">
             <ThemeToggle />
             <Link
-            href="#contact"
+            href="https://cal.com/robison-custodio/15min"
             className="rounded-xl px-4 py-2 text-sm font-semibold oc-btn-secondary oc-accent transition hover:-translate-y-0.5"
           >
             Book a Call
@@ -231,7 +231,7 @@ export default function Home() {
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
-              href="#contact"
+              href="https://cal.com/robison-custodio/15min"
               className="rounded-xl px-6 py-3 font-semibold transition hover:-translate-y-0.5 oc-btn-primary"
             >
               Start Deployment
@@ -462,7 +462,7 @@ export default function Home() {
             We can deploy this stack for your Calgary team with security-first implementation and managed support.
           </p>
           <a
-            href="https://cal.com"
+            href="https://cal.com/robison-custodio/15min"
             className="mt-8 inline-block rounded-xl px-6 py-3 font-semibold transition oc-btn-primary"
           >
             Book a Discovery Call
