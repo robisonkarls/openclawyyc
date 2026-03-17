@@ -87,9 +87,9 @@ const useCases = [
 ];
 
 const plans = [
-  { name: "Starter", price: "From consultation", spec: "Solo workflows, core channels, secure baseline", popular: false },
-  { name: "Team", price: "Most selected", spec: "Multi-role assistants, reporting, ongoing tuning", popular: true },
-  { name: "Scale", price: "Custom", spec: "Advanced automation, SLA support, dedicated architecture", popular: false },
+  { name: "Lite", price: "$15/mo", spec: "2 vCPU · 4 GB RAM · 40 GB SSD", popular: false },
+  { name: "Pro", price: "$25/mo", spec: "4 vCPU · 8 GB RAM · 80 GB SSD", popular: true },
+  { name: "Max", price: "$40/mo", spec: "8 vCPU · 16 GB RAM · 160 GB SSD", popular: false },
 ];
 
 const faqs = [
@@ -145,11 +145,11 @@ export default function Home() {
           <div>
             <h1 className="max-w-4xl text-4xl font-bold leading-tight tracking-tight md:text-6xl">
               <span className="bg-gradient-to-br from-[color:var(--text-primary)] via-[color:var(--coral-bright)] to-[color:var(--cyan-bright)] bg-clip-text text-transparent">
-                Build an always-on AI operations layer for your team
+                Deploy OpenClaw with a SetupClaw-style experience
               </span>
             </h1>
             <p className="mt-5 max-w-2xl text-base oc-text-secondary md:text-lg">
-              We deploy and manage OpenClaw so your team can run inbox triage, calendar ops, reminders, and proactive workflows without infrastructure overhead.
+              Your AI assistant stack goes live fast: email triage, calendar operations, proactive reminders, and cross-channel workflows.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link href="https://cal.com/robison-custodio/15min" className="rounded-xl px-6 py-3 font-semibold transition hover:-translate-y-0.5 oc-btn-primary">
@@ -202,7 +202,7 @@ export default function Home() {
 
       <section className="oc-section py-16">
         <div className="mx-auto max-w-7xl px-6">
-          <h2 className="text-2xl font-bold tracking-tight md:text-4xl">How deployment works</h2>
+          <h2 className="text-2xl font-bold tracking-tight md:text-4xl">Three steps to launch</h2>
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             {steps.map((s) => (
               <article key={s.number} className="rounded-2xl oc-surface p-6">
@@ -230,7 +230,7 @@ export default function Home() {
 
       <section className="oc-section py-16">
         <div className="mx-auto max-w-7xl px-6">
-          <h2 className="text-2xl font-bold tracking-tight md:text-4xl">Engagement options</h2>
+          <h2 className="text-2xl font-bold tracking-tight md:text-4xl">Simple pricing</h2>
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             {plans.map((plan) => (
               <article key={plan.name} className={`rounded-2xl p-6 ${plan.popular ? "border border-[color:var(--coral-bright)]/40 bg-[color:var(--surface-card)]" : "oc-surface"}`}>
@@ -239,7 +239,7 @@ export default function Home() {
                 <p className="mt-2 text-lg font-semibold">{plan.price}</p>
                 <p className="mt-3 text-sm oc-text-secondary">{plan.spec}</p>
                 <Link href="https://cal.com/robison-custodio/15min" className="mt-6 inline-block rounded-xl px-4 py-2 text-sm font-semibold oc-btn-primary">
-                  Discuss This Plan
+                  Get Started
                 </Link>
               </article>
             ))}
