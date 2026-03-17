@@ -525,9 +525,13 @@ export default function Home() {
           >
             Book a Discovery Call
           </a>
-          <div className="mt-4">
-            <Link href="/privacy" className="text-sm oc-text-secondary underline hover:oc-accent">
+          <div className="mt-4 flex items-center justify-center gap-4 text-sm">
+            <Link href="/privacy" className="oc-text-secondary underline hover:oc-accent">
               Privacy Policy
+            </Link>
+            <span className="oc-text-muted">•</span>
+            <Link href="/terms" className="oc-text-secondary underline hover:oc-accent">
+              Terms of Service
             </Link>
           </div>
         </div>
