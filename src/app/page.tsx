@@ -99,18 +99,21 @@ const pricingPlans = [
     subtitle: "Recommended",
     description: "Managed service — we host, harden + 14-day hypercare",
     price: "$3,000",
+    checkoutUrl: "https://buy.stripe.com/7sY00bgYfaHC1RcavZ3sI00",
   },
   {
     title: "Mac Mini Setup",
     subtitle: "Remote",
     description: "iMessage integration + local hardware",
     price: "$5,000",
+    checkoutUrl: "https://buy.stripe.com/28EaEPdM3eXS1Rc1Zt3sI01",
   },
   {
     title: "Mac Mini In-Person",
     subtitle: "Calgary Area only",
     description: "On-site setup + iMessage",
     price: "$6,000",
+    checkoutUrl: "https://buy.stripe.com/00w00b7nF172gM60Vp3sI02",
   },
   {
     title: "Add Another Agent",
@@ -118,6 +121,7 @@ const pricingPlans = [
     description: "Deploy your exec team",
     price: "+$1,500",
     footnote: "each",
+    checkoutUrl: "https://buy.stripe.com/5kQbIT9vN02Y8fAfQj3sI03",
   },
 ];
 
@@ -380,6 +384,14 @@ export default function Home() {
                 <p className="mt-3 text-sm oc-text-secondary">{plan.description}</p>
                 <p className="mt-5 text-2xl font-bold">{plan.price}</p>
                 {plan.footnote ? <p className="text-xs uppercase tracking-wide oc-text-muted">{plan.footnote}</p> : null}
+                <a
+                  href={plan.checkoutUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 inline-block rounded-xl px-4 py-2 text-sm font-semibold oc-btn-primary"
+                >
+                  Buy Now
+                </a>
               </article>
             ))}
           </div>
